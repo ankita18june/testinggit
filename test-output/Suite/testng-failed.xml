@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Url" value="https://www.facebook.com"/>
+  <listeners>
+    <listener class-name="com.test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.test.InvocationCountTest">
+        <methods>
+          <include name="sum"/>
+        </methods>
+      </class> <!-- com.test.InvocationCountTest -->
+      <class name="com.test.TestngFeatures">
+        <methods>
+          <include name="getup"/>
+        </methods>
+      </class> <!-- com.test.TestngFeatures -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
